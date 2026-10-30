@@ -240,6 +240,79 @@ body{margin:0;}
 :root[data-theme="dark"] .theme-toggle:hover{color:#339fff;border-color:#64748b;}
 :root[data-theme="dark"] .theme-toggle .i-sun{display:block;} :root[data-theme="dark"] .theme-toggle .i-moon{display:none;}
 @media print{ .theme-toggle{display:none !important;} }
+/* Where Quotes and Sales Came From (aid_section.py) */
+.atable{min-width:0;}
+.atable.wide{min-width:640px;}
+.atable th.r,.atable td.r{padding-right:20px;}
+.atable th.r:last-child,.atable td.r:last-child{padding-right:4px;}
+.atable td{padding:13px 0;}
+.atable .big{font-size:17px;}
+.atable td .sub.ts{max-width:300px;margin:4px 0 0 18px;}
+.atable td.r .sub.pk{max-width:none;font-size:12px;white-space:nowrap;}
+@media (max-width:560px){
+  .atable th{font-size:10px;letter-spacing:.04em;}
+  .atable th.r,.atable td.r{padding-right:7px;}
+  .atable td.r .sub.pk{font-size:11px;}
+  .atable .nm{gap:6px;}
+  .atable .big{font-size:15px;}
+  .atable .nm{font-size:13px;}
+  .atable .cc{font-size:14px;}
+  .atable td .sub.ts{margin-left:0;}
+  .atable td .nm .bd{display:none;}
+}
+.atable tr.tot td{border-top:1px solid var(--border-strong);border-bottom:none;}
+.atable tr.muted .nm,.atable tr.muted .big{color:var(--ink-muted);}
+.atable .aidn{font-variant-numeric:tabular-nums;white-space:nowrap;}
+.atable .cc{font-size:15px;font-weight:600;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+.anote{font-size:13px;color:var(--ink-muted);line-height:1.6;margin-top:16px;}
+.anote b{color:var(--ink);font-weight:600;}
+.astack{display:grid;gap:16px;}
+
+/* month table and related reports */
+.mtable{min-width:560px;}
+.atable th:first-child{padding-right:10px;}
+.mtable td{padding:12px 0;}
+.mtable .big{font-size:16px;}
+.mtable td.na .cc{color:var(--ink-muted);}
+.rel .pstep .h a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--brand-border);}
+.rel .pstep .h a:hover{color:var(--brand-text);}
+
+.atable{min-width:0;}
+.atable.wide{min-width:640px;}
+.atable th.r,.atable td.r{padding-right:20px;}
+.atable th.r:last-child,.atable td.r:last-child{padding-right:4px;}
+.atable td{padding:13px 0;}
+.atable .big{font-size:17px;}
+.atable td .sub.ts{max-width:300px;margin:4px 0 0 18px;}
+.atable td.r .sub.pk{max-width:none;font-size:12px;white-space:nowrap;}
+@media (max-width:560px){
+  .atable th{font-size:10px;letter-spacing:.04em;}
+  .atable th.r,.atable td.r{padding-right:7px;}
+  .atable td.r .sub.pk{font-size:11px;}
+  .atable .nm{gap:6px;}
+  .atable .big{font-size:15px;}
+  .atable .nm{font-size:13px;}
+  .atable .cc{font-size:14px;}
+  .atable td .sub.ts{margin-left:0;}
+  .atable td .nm .bd{display:none;}
+}
+.atable tr.tot td{border-top:1px solid var(--border-strong);border-bottom:none;}
+.atable tr.muted .nm,.atable tr.muted .big{color:var(--ink-muted);}
+.atable .aidn{font-variant-numeric:tabular-nums;white-space:nowrap;}
+.atable .cc{font-size:15px;font-weight:600;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+.anote{font-size:13px;color:var(--ink-muted);line-height:1.6;margin-top:16px;}
+.anote b{color:var(--ink);font-weight:600;}
+.astack{display:grid;gap:16px;}
+
+/* call-outs and the recommendation box */
+.gapcall{border:1px solid var(--brand-border);border-radius:12px;padding:16px 20px;margin-top:16px;background:linear-gradient(var(--brand-tint),var(--brand-tint)),var(--surface);font-size:14px;line-height:1.6;color:var(--ink);}
+.gapcall b{color:var(--brand-text);} .gapcall p{margin:0 0 8px;} .gapcall p:last-child{margin-bottom:0;}
+.askbox{border:2px solid var(--brand);border-radius:14px;padding:18px 22px;margin-top:16px;background:var(--surface);font-size:14px;line-height:1.6;color:var(--ink);}
+.askbox .ah{font-family:"Sora",system-ui,sans-serif;font-weight:700;font-size:15px;color:var(--brand-text);margin-bottom:8px;letter-spacing:.01em;}
+.askbox p{margin:0 0 8px;} .askbox ul{margin:0 0 10px;padding-left:20px;} .askbox li{margin:0 0 6px;}
+.askbox .am{font-size:13px;color:var(--ink-muted);margin:0;} .askbox b{color:var(--ink);}
+.mktnote{font-size:12.5px;color:var(--ink-muted);line-height:1.6;margin-top:12px;}
+.wtable td{padding:10px 0;}
 </style>
 </head>
 <body>
@@ -253,12 +326,12 @@ body{margin:0;}
     <div class="eb">Performance Review</div>
     <div class="rule"></div>
     <h1>Durham Agency</h1>
-    <div class="who">Prepared for <b>Jason</b><br>Houston, TX<br>Home &middot; Since launch, Sep 21 through Oct 19, 2026</div>
+    <div class="who">Prepared for <b>Jason</b><br>Houston, TX<br>Home &middot; Since launch, Sep 21 through Oct 30, 2026</div>
     <nav aria-label="Report sections">
       <a href="#s1"><span class="ix">01</span>Key Metrics</a>
       <a href="#s2"><span class="ix">02</span>Performance by Source</a>
       <a href="#s3"><span class="ix">03</span>Conversion Funnel</a>
-      <a href="#s4"><span class="ix">04</span>Lead Geography</a>
+      <a href="#s4"><span class="ix">04</span>Where Sales Came From</a>
       <a href="#s5"><span class="ix">05</span>Recommendations</a>
     </nav>
     <div class="foot">GOAL Performance Marketing<br>All conversion metrics calculated based on Leads, not Clicks.</div>
@@ -267,45 +340,48 @@ body{margin:0;}
   <main class="main">
 
     <div class="strip">
-      <div class="f"><span class="l">Reporting period</span><span class="v">Since launch, Sep 21 through Oct 19, 2026</span></div>
+      <div class="f"><span class="l">Reporting period</span><span class="v">Since launch, Sep 21 through Oct 30, 2026</span></div>
       <div class="f"><span class="l">Lines</span><span class="v">Home</span></div>
       <div class="f"><span class="l">Lead source</span><span class="v">GOAL branded campaigns</span></div>
       <span class="badge">Home</span>
     </div>
 
     <section class="block" id="s1">
-      <div class="bhead"><span class="ix">01</span><div><h2>Key Metrics</h2><p>Since launch, Sep 21 through Oct 19, 2026</p></div></div>
+      <div class="bhead"><span class="ix">01</span><div><h2>Key Metrics</h2><p>Since launch, Sep 21 through Oct 30, 2026</p></div></div>
       <div class="kgrid">
-        <div class="kc"><div class="v">168</div><div class="k">Leads</div><div class="d">Home</div></div>
-        <div class="kc"><div class="v">9</div><div class="k">Inbound Calls</div><div class="d">Direct from prospects</div></div>
-        <div class="kc"><div class="v">$4,279</div><div class="k">Spend</div><div class="d">262 clicks &middot; 692 impressions</div></div>
-        <div class="kc"><div class="v">27.4%</div><div class="k">Quote Rate</div><div class="d">46 of 168 leads quoted</div></div>
-        <div class="kc hl"><div class="v">$2,139</div><div class="k">CPA</div><div class="d">Cost per sale &middot; $4,279 spend / 2 sales</div></div>
-        <div class="kc"><div class="v">2</div><div class="k">Policies Sold</div><div class="d">Both from the Oct 15 status upload</div></div>
+        <div class="kc"><div class="v">237</div><div class="k">Leads</div><div class="d">Home &middot; $6,084 spend &middot; 11 inbound calls &middot; 8 callers</div></div>
+        <div class="kc hl"><div class="v">$3,042</div><div class="k">CPA</div><div class="d">$6,084.12 &divide; 2 sales &middot; early read on two sales</div></div>
+        <div class="kc"><div class="v">2</div><div class="k">Policies Sold</div><div class="d">Sep 23 lead, now a Customer &middot; Oct 9 lead, in Onboarding</div></div>
+        <div class="kc"><div class="v">19.4%</div><div class="k">Quote Rate</div><div class="d">46 of 237 leads &middot; 30.7% of the 150 leads through Oct 15 &middot; $132 per quote</div></div>
+        <div class="kc"><div class="v">25</div><div class="k">Open Quotes</div><div class="d">9 Quoted, 11 Requote, 4 Follow Up and 1 with an X-date set</div></div>
+        <div class="kc"><div class="v">97</div><div class="k">No Outcome Yet</div><div class="d">Leads not in the Oct 15 file &middot; 96 arrived Oct 15 or later</div></div>
       </div>
+<div class="askbox"><div class="ah">What we need from you</div><p>Thank you for the Oct 15 status file. It brought in both sales and the stage of every lead from Sep 21 to Oct 14. It is the latest file we have, so the 97 leads that are not in it, 96 of them from Oct 15 on, have no outcomes yet.</p><ul><li><b>Send a fresh status export</b> with Sold, Premium, Items and Assigned To (producer) columns, covering every GOAL lead since Sep 21. That brings in the leads since Oct 15 and lets this report show premium, items per sale and results by producer.</li><li><b>Record Quoted and Sold in GOAL</b> on each lead as it happens, so quotes and sales show up between exports.</li><li><b>Keep working the open leads.</b> 91 of the 140 leads in the Oct 15 file (65%) are still in a Called stage: 69 with no contact, 11 with a message left and 11 with a wrong number.</li></ul><p class="am">Two sales since launch: a Sep 23 lead now a Customer and an Oct 9 lead in Onboarding in the Oct 15 file. GOAL's own Sold events show the same two. Your status file has no Items or Premium column, so cost per item and premium are not shown.</p></div>
+      <div class="gapcall"><p><b>How to read this report.</b> Quotes, contacts and sales come from your Oct 15 status file (140 rows: name, phone, status, Quoted, Bound), matched to GOAL leads by phone; every row matched. The latest status file is from Oct 15, 2026, so leads that arrived after it have no outcomes yet. It lists 140 of the 237 Home leads, every lead from Sep 21 to Oct 14; the other 97 are not in it, 96 of them from Oct 15 on. In your file every lead the agency reached carries the Quoted mark, so Contacted and Quoted are the same 46 leads; quote rate is 19.4% of all 237 leads and 30.7% of the 150 leads that arrived by Oct 15.</p><p>CPA is spend divided by sales: $6,084.12 on 2 sales. It rests on 2 sales and counts spend on the 97 leads that have no outcome yet, so treat it as an early read that the next status file will move. Your status file has no Items or Premium column, so cost per item and premium are not shown. Results by producer cannot be shown on the campaign pages: the status file has no Assigned To column.</p></div>
+      <div class="mktnote">Not included: 13 Home (Marketplace) leads from Oct 19 to 29. Marketplace is a separate product, so its leads are left out of every lead count, rate and figure on this page; none is in a status file yet.</div>
     </section>
 
     <section class="block" id="s2">
-      <div class="bhead"><span class="ix">02</span><div><h2>Performance by Source</h2><p>Since launch, Sep 21 through Oct 19, 2026</p></div></div>
+      <div class="bhead"><span class="ix">02</span><div><h2>Performance by Source</h2><p>Since launch, Sep 21 through Oct 30, 2026</p></div></div>
       <div class="split">
         <div class="panel">
           <div class="pt">Lead Mix</div>
           <div class="donut-wrap">
             <div class="donut">
-              <svg viewBox="0 0 42 42" width="180" height="180" role="img" aria-label="Home lead mix by source: Tier 1 87, Tier 3 56, Home SearchB 16, Tier 2 9">
+              <svg viewBox="0 0 42 42" width="180" height="180" role="img" aria-label="Lead mix: Tier 1 126, Tier 3 75, Home SearchB 21, Tier 2 15">
                 <circle class="track" cx="21" cy="21" r="15.915" fill="none" stroke-width="6"></circle>
-                <circle class="seg" cx="21" cy="21" r="15.915" fill="none" stroke="var(--s1)" stroke-width="6" stroke-dasharray="0 100" data-dash="51.8" transform="rotate(-90 21 21)"></circle>
-                <circle class="seg" cx="21" cy="21" r="15.915" fill="none" stroke="var(--s2)" stroke-width="6" stroke-dasharray="0 100" data-dash="33.3" data-offset="51.8" transform="rotate(-90 21 21)"></circle>
-                <circle class="seg" cx="21" cy="21" r="15.915" fill="none" stroke="var(--s3)" stroke-width="6" stroke-dasharray="0 100" data-dash="9.5" data-offset="85.1" transform="rotate(-90 21 21)"></circle>
-                <circle class="seg" cx="21" cy="21" r="15.915" fill="none" stroke="var(--s4)" stroke-width="6" stroke-dasharray="0 100" data-dash="5.4" data-offset="94.6" transform="rotate(-90 21 21)"></circle>
+                <circle class="seg" cx="21" cy="21" r="15.915" fill="none" stroke="var(--s1)" stroke-width="6" stroke-dasharray="0 100" data-dash="53.2" transform="rotate(-90 21 21)"></circle>
+                <circle class="seg" cx="21" cy="21" r="15.915" fill="none" stroke="var(--s2)" stroke-width="6" stroke-dasharray="0 100" data-dash="31.6" data-offset="53.2" transform="rotate(-90 21 21)"></circle>
+                <circle class="seg" cx="21" cy="21" r="15.915" fill="none" stroke="var(--s3)" stroke-width="6" stroke-dasharray="0 100" data-dash="8.9" data-offset="84.8" transform="rotate(-90 21 21)"></circle>
+                <circle class="seg" cx="21" cy="21" r="15.915" fill="none" stroke="var(--s4)" stroke-width="6" stroke-dasharray="0 100" data-dash="6.3" data-offset="93.7" transform="rotate(-90 21 21)"></circle>
               </svg>
-              <div class="center"><div class="n">168</div><div class="l">leads</div></div>
+              <div class="center"><div class="n">237</div><div class="l">leads</div></div>
             </div>
             <div class="legend">
-              <div class="li"><span class="sw" style="background:var(--s1)"></span><span class="nm">Tier 1</span><span class="vl">87</span></div>
-              <div class="li"><span class="sw" style="background:var(--s2)"></span><span class="nm">Tier 3</span><span class="vl">56</span></div>
-              <div class="li"><span class="sw" style="background:var(--s3)"></span><span class="nm">Home SearchB</span><span class="vl">16</span></div>
-              <div class="li"><span class="sw" style="background:var(--s4)"></span><span class="nm">Tier 2</span><span class="vl">9</span></div>
+              <div class="li"><span class="sw" style="background:var(--s1)"></span><span class="nm">Tier 1</span><span class="vl">126</span></div>
+              <div class="li"><span class="sw" style="background:var(--s2)"></span><span class="nm">Tier 3</span><span class="vl">75</span></div>
+              <div class="li"><span class="sw" style="background:var(--s3)"></span><span class="nm">Home SearchB</span><span class="vl">21</span></div>
+              <div class="li"><span class="sw" style="background:var(--s4)"></span><span class="nm">Tier 2</span><span class="vl">15</span></div>
             </div>
           </div>
         </div>
@@ -314,151 +390,223 @@ body{margin:0;}
             <thead><tr><th>Source</th><th class="r">Leads</th><th class="r">Calls</th><th>Notes</th></tr></thead>
             <tbody>
               <tr>
-                <td><div class="nm"><span class="bd" style="background:var(--s1)"></span>Tier 1</div><span class="tag blue">Primary</span></td>
-                <td class="r"><span class="big">87</span></td>
-                <td class="r"><span class="big">5</span></td>
-                <td><div class="sub">52% of leads on 49% of spend ($2,092). 126 clicks from 314 impressions; 69.0% of clicks became leads. 24 quotes recorded (27.6% of leads) and 1 sale.</div></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s1)"></span>Tier 1</div><span class="tag blue">Most leads</span></td>
+                <td class="r"><span class="big">126</span></td>
+                <td class="r"><span class="big">7</span></td>
+                <td><div class="sub">53% of leads on 54% of spend ($3,256). 24 quoted, $136 per quote. 1 sale, CPA $3,256. September leads quoted 12 of 31. Leads by month: Sep 31, Oct 95.</div></td>
               </tr>
               <tr>
-                <td><div class="nm"><span class="bd" style="background:var(--s2)"></span>Tier 3</div></td>
-                <td class="r"><span class="big">56</span></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s2)"></span>Tier 3</div><span class="tag blue">Sale</span></td>
+                <td class="r"><span class="big">75</span></td>
                 <td class="r"><span class="big">3</span></td>
-                <td><div class="sub">33% of leads on 38% of spend ($1,620). 101 clicks from 289 impressions; 55.4% of clicks became leads. 17 quotes recorded (30.4% of leads) and 1 sale.</div></td>
+                <td><div class="sub">32% of leads on 33% of spend ($2,035). 17 quoted, $120 per quote. 1 sale, CPA $2,035. September leads quoted 10 of 26. Leads by month: Sep 26, Oct 49.</div></td>
               </tr>
               <tr>
                 <td><div class="nm"><span class="bd" style="background:var(--s3)"></span>Home SearchB</div></td>
-                <td class="r"><span class="big">16</span></td>
+                <td class="r"><span class="big">21</span></td>
                 <td class="r"><span class="big">1</span></td>
-                <td><div class="sub">10% of leads on 8% of spend ($334). 18 clicks from 41 impressions; 88.9% of clicks became leads. 4 quotes recorded (25.0% of leads).</div></td>
+                <td><div class="sub">9% of leads on 7% of spend ($456). 4 quoted, $114 per quote. September leads quoted 3 of 6. Leads by month: Sep 6, Oct 15.</div></td>
               </tr>
               <tr>
                 <td><div class="nm"><span class="bd" style="background:var(--s4)"></span>Tier 2</div></td>
-                <td class="r"><span class="big">9</span></td>
+                <td class="r"><span class="big">15</span></td>
                 <td class="r"><span class="big">0</span></td>
-                <td><div class="sub">5% of leads on 5% of spend ($232). 17 clicks from 46 impressions; 52.9% of clicks became leads. 1 quote recorded (11.1% of leads).</div></td>
+                <td><div class="sub">6% of leads on 6% of spend ($337). 1 quoted, $337 per quote. September leads quoted 0 of 5. Leads by month: Sep 5, Oct 10.</div></td>
               </tr>
             </tbody>
           </table>
-          <div class="sub" style="max-width:none;margin-top:14px">Leads by month: September 21 to 30: 68; October 1 to 19: 100. Home Search and Home Search Premium each showed your ad once, with no clicks or spend.</div>
+          <div class="sub" style="max-width:none;margin-top:14px">Leads, spend and inbound calls are GOAL source totals for Sep 21 through Oct 30, 2026. Quoted and sold by source come from your Oct 15 status file: each quoted or sold prospect was traced to the source of the original lead, and the counts match GOAL's own events (46 quoted, 2 sold). September quote rates by source are the cleanest comparison, since every September lead is in the file.</div>
         </div>
       </div>
     </section>
 
     <section class="block" id="s3">
-      <div class="bhead"><span class="ix">03</span><div><h2>Conversion Funnel</h2><p>Since launch, Sep 21 through Oct 19, 2026</p></div></div>
+      <div class="bhead"><span class="ix">03</span><div><h2>Conversion Funnel</h2><p>Since launch, Sep 21 through Oct 30, 2026</p></div></div>
       <div class="fpanel">
-        <div class="fstep"><div class="lab">Your ad shown<small>impressions</small></div><div class="fbar"><i class="pre" data-w="100">692</i></div><div class="pct"><b>100%</b></div></div>
-        <div class="fstep"><div class="lab">Clicks<small>to your page</small></div><div class="fbar"><i class="pre" data-w="84">262</i></div><div class="pct"><b>37.9%</b><span>of impressions</span></div></div>
+        <div class="fstep"><div class="lab">Clicks<small>to your page</small></div><div class="fbar"><i class="pre" data-w="100">377</i></div><div class="pct"><b>100%</b></div></div>
         <div class="fdiv">Conversion funnel &middot; rates based on Leads</div>
-        <div class="fstep"><div class="lab">Leads<small>submitted</small></div><div class="fbar"><i class="cv" data-w="78">168</i></div><div class="pct"><b>64.1%</b><span>of clicks</span></div></div>
-        <div class="fstep"><div class="lab">Contacted<small>agency status file</small></div><div class="fbar"><i class="cv" data-w="64">46</i></div><div class="pct"><b>32.9%</b><span>of 140 in status file</span></div></div>
-        <div class="fstep"><div class="lab">Quotes<small>recorded in GOAL</small></div><div class="fbar"><i class="cv" data-w="52">46</i></div><div class="pct"><b>27.4%</b><span>of leads</span></div></div>
-        <div class="fstep"><div class="lab">Sales<small>policies sold</small></div><div class="fbar"><i class="cv end" data-w="28">2</i></div><div class="pct"><b>1.2%</b><span>of leads</span></div></div>
-        <div class="fnote">This report covers about one month of data (Sep 21 through Oct 19), so counts by source are still small and will firm up with more time. So far, <b>37.9%</b> of impressions became clicks and <b>64.1%</b> of clicks became leads (168 of 262). The agency status file uploaded on Oct 15 covers 140 of the 168 leads. 46 of those 140 have been reached (<b>32.9%</b>), and every lead reached carries a Quoted mark, so the Contacted and Quotes steps show the same 46. That is <b>27.4%</b> of all 168 leads. 2 leads have a Sold event (<b>1.2%</b>), both recorded from the Oct 15 file. CPA is $4,279 of spend divided by 2 sales, <b>$2,139</b>. By source, Tier 1 has 24 quotes and 1 sale, and Tier 3 has 17 quotes and 1 sale. 28 leads are not in a status file yet, 27 of them received on or after Oct 15.</div>
+        <div class="fstep"><div class="lab">Leads<small>submitted</small></div><div class="fbar"><i class="cv" data-w="84">237</i></div><div class="pct"><b>62.9%</b><span>of clicks</span></div></div>
+        <div class="fstep"><div class="lab">In the status file<small>Oct 15 file</small></div><div class="fbar"><i class="cv" data-w="56">140</i></div><div class="pct"><b>59.1%</b><span>of leads</span></div></div>
+        <div class="fstep"><div class="lab">Reached and quoted<small>Quoted mark</small></div><div class="fbar"><i class="cv" data-w="25">46</i></div><div class="pct"><b>19.4%</b><span>of leads</span></div></div>
+        <div class="fstep"><div class="lab">Open quotes<small>still deciding</small></div><div class="fbar"><i class="cv" data-w="18">25</i></div><div class="pct"><b>10.5%</b><span>of leads</span></div></div>
+        <div class="fstep"><div class="lab">Sales<small>policies sold</small></div><div class="fbar"><i class="cv end" data-w="14">2</i></div><div class="pct"><b>0.8%</b><span>of leads</span></div></div>
+        <div class="fnote">GOAL delivered <b>237</b> leads from 377 clicks (62.9%). The Oct 15 status file lists 140 of them. <b>46</b> were reached and carry the Quoted mark (19.4% of all leads, 32.9% of the leads in the file), and <b>2</b> bought. Of the 46 reached, 25 are open quotes or requotes and 19 are closed; of the rest of the file, 91 are still in a Called stage and 3 are marked Do Not Call. 97 leads are not in the file yet, so they have no outcomes. CPA <b>$3,042</b> ($6,084.12 &divide; 2); cost per quote $132 (46 quotes). GOAL's own events show 46 quoted and 2 sold, matching your file.</div>
       </div>
+      <div class="panel tscroll" style="margin-top:16px">
+          <div class="pt">By month the lead arrived</div>
+          <table class="ltable atable mtable">
+            <thead><tr><th>Month</th><th class="r">Leads</th><th class="r">Spend</th><th class="r">In the status file</th><th class="r">Quoted</th><th class="r">Sold</th><th class="r">Quote rate</th><th class="r">Cost per quote</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="nm">Sep 21 to 30</div></td>
+                <td class="r"><span class="big">68</span></td>
+                <td class="r"><span class="cc">$1,546</span></td>
+                <td class="r"><span class="cc">68</span></td>
+                <td class="r"><span class="cc">25</span></td>
+                <td class="r"><span class="cc">1</span></td>
+                <td class="r"><span class="cc">36.8%</span></td>
+                <td class="r"><span class="cc">$62</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm">Oct 1 to 30</div></td>
+                <td class="r"><span class="big">169</span></td>
+                <td class="r"><span class="cc">$4,538</span></td>
+                <td class="r"><span class="cc">72</span></td>
+                <td class="r"><span class="cc">21</span></td>
+                <td class="r"><span class="cc">1</span></td>
+                <td class="r"><span class="cc">12.4%</span></td>
+                <td class="r"><span class="cc">$216</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <div class="anote">Leads and spend are GOAL monthly counts. Quoted and sold are counted in the month the lead arrived. Every September lead is in the Oct 15 file. 97 of the 169 October leads are not in it yet, so October quote and sale counts will rise with the next status file.</div>
     </section>
 
     <section class="block" id="s4">
-      <div class="bhead"><span class="ix">04</span><div><h2>Lead Geography</h2><p>Where leads live and who insures them today</p></div></div>
-      <div style="display:grid;gap:16px">
+      <div class="bhead"><span class="ix">04</span><div><h2>Where Quotes and Sales Came From: Ad Channel and Traffic Tier</h2><p>Quoted and sold prospects by the ad channel (Aid) and traffic tier of the original lead &middot; Since launch, Sep 21 through Oct 30, 2026</p></div></div>
+      <div class="astack">
         <div class="panel tscroll">
-          <div class="pt">Top counties</div>
-          <table class="ltable">
-            <thead><tr><th>County</th><th class="r">Share</th><th class="r">Leads</th><th>Largest cities</th></tr></thead>
+          <div class="pt">Quotes and sales by ad channel (Aid)</div>
+          <table class="ltable atable">
+            <thead><tr><th>Ad channel &middot; traffic tier</th><th class="r">Leads</th><th class="r">In the file</th><th class="r">Quoted</th><th class="r">Sold</th></tr></thead>
             <tbody>
               <tr>
-                <td><div class="nm">Dallas</div></td>
-                <td class="r"><span class="big">23%</span></td><td class="r"><span class="big">39</span></td>
-                <td><div class="sub">Dallas 13, Lancaster 6</div></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s1)"></span><span class="aidn">Aid 114217</span></div><div class="sub ts">Tier 3</div></td>
+                <td class="r"><span class="cc">16</span></td>
+                <td class="r"><span class="cc">9</span></td>
+                <td class="r"><span class="cc">2</span></td>
+                <td class="r"><span class="big">1</span></td>
               </tr>
               <tr>
-                <td><div class="nm">Tarrant</div></td>
-                <td class="r"><span class="big">18%</span></td><td class="r"><span class="big">31</span></td>
-                <td><div class="sub">Fort Worth 14, Arlington 9</div></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s2)"></span><span class="aidn">Aid 114043</span></div><div class="sub ts">Tier 3, Tier 1</div></td>
+                <td class="r"><span class="cc">7</span></td>
+                <td class="r"><span class="cc">6</span></td>
+                <td class="r"><span class="cc">2</span></td>
+                <td class="r"><span class="big">1</span></td>
               </tr>
               <tr>
-                <td><div class="nm">Bexar</div></td>
-                <td class="r"><span class="big">12%</span></td><td class="r"><span class="big">20</span></td>
-                <td><div class="sub">San Antonio 16, Converse 3</div></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s3)"></span><span class="aidn">Aid 113771</span></div><div class="sub ts">Tier 3</div></td>
+                <td class="r"><span class="cc">42</span></td>
+                <td class="r"><span class="cc">22</span></td>
+                <td class="r"><span class="cc">9</span></td>
+                <td class="r"><span class="big">-</span></td>
               </tr>
               <tr>
-                <td><div class="nm">Denton</div></td>
-                <td class="r"><span class="big">5%</span></td><td class="r"><span class="big">9</span></td>
-                <td><div class="sub">Little Elm 3, Aubrey 3</div></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s4)"></span><span class="aidn">Aid 114821</span></div><div class="sub ts">Tier 1</div></td>
+                <td class="r"><span class="cc">38</span></td>
+                <td class="r"><span class="cc">22</span></td>
+                <td class="r"><span class="cc">9</span></td>
+                <td class="r"><span class="big">-</span></td>
               </tr>
               <tr>
-                <td><div class="nm">Travis</div></td>
-                <td class="r"><span class="big">5%</span></td><td class="r"><span class="big">9</span></td>
-                <td><div class="sub">Austin 5, Pflugerville 4</div></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s5)"></span><span class="aidn">Aid 2252</span></div><div class="sub ts">Tier 1</div></td>
+                <td class="r"><span class="cc">24</span></td>
+                <td class="r"><span class="cc">14</span></td>
+                <td class="r"><span class="cc">6</span></td>
+                <td class="r"><span class="big">-</span></td>
               </tr>
               <tr>
-                <td><div class="nm">Hidalgo</div></td>
-                <td class="r"><span class="big">4%</span></td><td class="r"><span class="big">7</span></td>
-                <td><div class="sub">McAllen 4, Edinburg 2</div></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s6)"></span><span class="aidn">Aid 112864</span></div><div class="sub ts">Tier 3</div></td>
+                <td class="r"><span class="cc">8</span></td>
+                <td class="r"><span class="cc">6</span></td>
+                <td class="r"><span class="cc">3</span></td>
+                <td class="r"><span class="big">-</span></td>
               </tr>
               <tr>
-                <td><div class="nm">All other counties</div></td>
-                <td class="r"><span class="big">32%</span></td><td class="r"><span class="big">53</span></td>
-                <td><div class="sub">25 more Texas counties</div></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s6)"></span><span class="aidn">Aid 3225</span></div><div class="sub ts">Tier 1</div></td>
+                <td class="r"><span class="cc">7</span></td>
+                <td class="r"><span class="cc">6</span></td>
+                <td class="r"><span class="cc">3</span></td>
+                <td class="r"><span class="big">-</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s5)"></span>10 more ad channels</div><div class="sub ts">Fewer than 3 quotes each, no sale</div></td>
+                <td class="r"><span class="cc">70</span></td>
+                <td class="r"><span class="cc">39</span></td>
+                <td class="r"><span class="cc">12</span></td>
+                <td class="r"><span class="big">-</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s7)"></span>All other channels</div><div class="sub ts">14 ad channels with no quote yet</div></td>
+                <td class="r"><span class="cc">25</span></td>
+                <td class="r"><span class="cc">16</span></td>
+                <td class="r"><span class="cc">-</span></td>
+                <td class="r"><span class="big">-</span></td>
+              </tr>
+              <tr class="tot">
+                <td><div class="nm">Total</div><div class="sub ts">31 ad channels</div></td>
+                <td class="r"><span class="cc">237</span></td>
+                <td class="r"><span class="cc">140</span></td>
+                <td class="r"><span class="cc">46</span></td>
+                <td class="r"><span class="big">2</span></td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="panel tscroll">
-          <div class="pt">Current carrier, as entered by the prospect</div>
-          <table class="ltable">
-            <thead><tr><th>Current carrier</th><th class="r">Leads</th><th class="r">Share</th></tr></thead>
+          <div class="pt">Quotes and sales by traffic tier</div>
+          <table class="ltable atable">
+            <thead><tr><th>Traffic tier</th><th class="r">Ad channels</th><th class="r">Leads</th><th class="r">Quoted</th><th class="r">Sold</th></tr></thead>
             <tbody>
               <tr>
-                <td><div class="nm">Allstate</div></td>
-                <td class="r"><span class="big">82</span></td>
-                <td class="r"><span class="big">49%</span></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s1)"></span>Tier 1</div><div class="sub ts">GOAL Tier 1 source: $3,256 spend</div></td>
+                <td class="r"><span class="cc">8</span></td>
+                <td class="r"><span class="cc">126</span></td>
+                <td class="r"><span class="cc">24</span></td>
+                <td class="r"><span class="big">1</span></td>
               </tr>
               <tr>
-                <td><div class="nm">AAA</div></td>
-                <td class="r"><span class="big">5</span></td>
-                <td class="r"><span class="big">3%</span></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s2)"></span>Tier 3</div><div class="sub ts">GOAL Tier 3 source: $2,035 spend</div></td>
+                <td class="r"><span class="cc">6</span></td>
+                <td class="r"><span class="cc">75</span></td>
+                <td class="r"><span class="cc">17</span></td>
+                <td class="r"><span class="big">1</span></td>
               </tr>
               <tr>
-                <td><div class="nm">USAA</div></td>
-                <td class="r"><span class="big">4</span></td>
-                <td class="r"><span class="big">2%</span></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s3)"></span>Home SearchB</div><div class="sub ts">GOAL Home SearchB source: $456 spend</div></td>
+                <td class="r"><span class="cc">4</span></td>
+                <td class="r"><span class="cc">21</span></td>
+                <td class="r"><span class="cc">4</span></td>
+                <td class="r"><span class="big">-</span></td>
               </tr>
               <tr>
-                <td><div class="nm">Other named carriers</div><div class="sub">Progressive 2, GEICO 1, The Hartford 1</div></td>
-                <td class="r"><span class="big">4</span></td>
-                <td class="r"><span class="big">2%</span></td>
+                <td><div class="nm"><span class="bd" style="background:var(--s4)"></span>Tier 2</div><div class="sub ts">GOAL Tier 2 source: $337 spend</div></td>
+                <td class="r"><span class="cc">1</span></td>
+                <td class="r"><span class="cc">15</span></td>
+                <td class="r"><span class="cc">1</span></td>
+                <td class="r"><span class="big">-</span></td>
               </tr>
-              <tr>
-                <td><div class="nm">Not given</div></td>
-                <td class="r"><span class="big">48</span></td>
-                <td class="r"><span class="big">29%</span></td>
-              </tr>
-              <tr>
-                <td><div class="nm">Other or not listed</div></td>
-                <td class="r"><span class="big">25</span></td>
-                <td class="r"><span class="big">15%</span></td>
+              <tr class="tot">
+                <td><div class="nm">Total</div><div class="sub ts">4 traffic tiers</div></td>
+                <td class="r"><span class="cc">31</span></td>
+                <td class="r"><span class="cc">237</span></td>
+                <td class="r"><span class="cc">46</span></td>
+                <td class="r"><span class="big">2</span></td>
               </tr>
             </tbody>
           </table>
-          <div class="sub" style="max-width:none;margin-top:14px">From the 168 Home prospect records in GOAL since launch, all Texas homeowners. Current carrier is the prospect's own answer on the quote form; 48 prospects left it blank.</div>
         </div>
       </div>
+      <div class="anote"><b>All 46</b> quoted or sold prospects were traced to the traffic tier of their original lead, and the counts by tier match GOAL's own Quoted and Sold events by source. Leads by ad channel come from the prospect records; leads by tier are GOAL source totals. Where a channel has no quote, its tier comes from a sample of its leads and is marked "(sampled)". One ad channel can run in more than one tier. Spend by ad channel is not available, so this compares outcomes, not cost. 97 leads are not in the Oct 15 status file, 96 of them from Oct 15 on, so a channel with many recent leads can show fewer quotes than it will. Sales: Sep 23 lead on Aid 114217 (Tier 3); Oct 9 lead on Aid 114043 (Tier 1).</div>
+      <div class="gapcall"><p><b>Ad channels with the fewest quotes and binds.</b> The <a href="Durham-Monthly-Sales-by-Source-10-30-26.html" style="color:var(--brand-text);font-weight:600">Monthly Sales by Source and Aid</a> report ranks the ad channels with several leads and few or no quotes or binds. Nothing has been changed at the ad channel level.</p></div>
     </section>
 
     <section class="block" id="s5" style="margin-bottom:0;">
       <div class="bhead"><span class="ix">05</span><div><h2>Recommendations</h2><p>Next review period</p></div></div>
       <div class="plan">
-        <div class="pstep"><div class="num">1</div><div><div class="h">Lower Tier 2 About 10% and Hold the Other Home Sources<span class="tag blue">GOAL</span></div><div class="b">Tier 2 has the lowest quote rate of the four Home sources and no sale, so its bid comes down about 10%. Tier 1 and Tier 3 each have one recorded sale and hold, and Home SearchB holds while its count builds. Daily limits stay where they are.</div><div class="m"><b>Metric behind it:</b> Tier 1: 87 of 168 leads (52%) on 49% of spend, 27.6% quoted, 1 sale. Tier 3: 56 leads (33%) on 38% of spend, 30.4% quoted, 1 sale. Home SearchB: 16 leads, 4 quoted. Tier 2: 9 leads on $232, 1 quoted (11.1%), no sale.</div></div></div>
-        <div class="pstep"><div class="num">2</div><div><div class="h">Reach Every Lead Across 30 Days<span class="tag neutral">Agency</span></div><div class="b">Contact frequency by week, across phone, text, and email:</div>
-          <div class="cad"><div class="c"><div class="w">Week 1</div><div class="n">3+/day</div><div class="s">all channels</div></div><div class="c"><div class="w">Week 2</div><div class="n">2+/day</div><div class="s">all channels</div></div><div class="c"><div class="w">Weeks 3&ndash;4</div><div class="n">every 2&ndash;3 days</div><div class="s">all channels</div></div></div><div class="m"><b>Metric behind it:</b> 91 of the 140 leads in the Oct 15 status file (65%) are still in a Called stage: 69 with no contact, 11 with a message left and 11 with a wrong number. 46 (32.9%) have been reached.</div></div></div>
-        <div class="pstep"><div class="num">3</div><div><div class="h">Follow Up on the 25 Open Quotes and Requotes<span class="tag neutral">Agency</span></div><div class="b">These leads have talked with the agency and are still deciding. A call or text every few days, and a check-in ahead of each X-date, keeps them moving toward a written policy. Leads marked Do Not Call stay off the call list.</div><div class="m"><b>Metric behind it:</b> Of the 46 leads reached, 2 bought, 25 are open (9 Quoted, 11 Requote, 4 Follow up, 1 X-date set) and 19 are closed (9 not interested, 6 hung up, 2 already purchased, 2 other). 3 leads are marked Do Not Call and are left off.</div></div></div>
-        <div class="pstep"><div class="num">4</div><div><div class="h">Follow Up on Quotes Given on Inbound Calls<span class="tag neutral">Agency</span></div><div class="b">Prospects who were quoted on the phone already know your numbers. A follow-up call within a few days, and again before the quote expires, keeps the conversation going toward a written policy.</div><div class="m"><b>Metric behind it:</b> 7 prospects called in since launch (9 inbound calls); 4 of them had a conversation of a minute or longer, and 2 callers were quoted on the phone. Both are now in the Requote stage, and none of the 7 callers has a sale recorded yet.</div></div></div>
-        <div class="pstep"><div class="num">5</div><div><div class="h">Keep Uploading the Lead Status File<span class="tag neutral">Agency</span></div><div class="b">The status file uploaded on Oct 15 brought quotes, sales and each lead's stage into GOAL in one step. Sending an updated file every two weeks keeps quote rate, contact rate, CPA and sales by source current, so each review rests on sales rather than lead counts.</div><div class="m"><b>Metric behind it:</b> The Oct 15 upload matched all 140 records and added both recorded sales. 27 Home leads have arrived since that upload and are not in a status file yet.</div></div></div>
+        <div class="pstep"><div class="num">1</div><div><div class="h">Raise the Home Bid on Tier 3<span class="tag blue">GOAL</span></div><div class="b">About a 10% bid increase on Tier 3. It has the lower spend per quote of the two largest sources and one of the two sales, on less spend than Tier 1. Daily limits stay where they are.</div><div class="m"><b>Metric behind it:</b> Tier 3: 75 leads on $2,035, 17 quoted ($120 per quote), 1 sale (CPA $2,035); its September leads quoted 10 of 26. Tier 1: 126 leads on $3,256, 24 quoted ($136 per quote), 1 sale (CPA $3,256). Home overall: $132 per quote.</div></div></div>
+        <div class="pstep"><div class="num">2</div><div><div class="h">Hold Tier 1 and Home SearchB<span class="tag blue">GOAL</span></div><div class="b">Tier 1 and Home SearchB stay at their current settings. Tier 1 has the most quotes and a sale; Home SearchB quotes at a good rate but has only 21 leads, too few to move. Daily limits stay where they are.</div><div class="m"><b>Metric behind it:</b> Tier 1: 24 of the 46 quotes, September leads quoted 12 of 31. Home SearchB: 21 leads on $456, 4 quoted ($114 per quote), September leads quoted 3 of 6, no sale yet.</div></div></div>
+        <div class="pstep"><div class="num">3</div><div><div class="h">Lower the Home Bid on Tier 2<span class="tag blue">GOAL</span></div><div class="b">About a 10% bid decrease on Tier 2, the Home source with the highest spend per quote and no sale. Daily limits stay where they are.</div><div class="m"><b>Metric behind it:</b> Tier 2: 15 leads on $337, 1 quoted ($337 per quote, against $132 for Home overall), no sale. None of its 5 September leads, all in the Oct 15 file, was quoted.</div></div></div>
+        <div class="pstep"><div class="num">4</div><div><div class="h">Send a Fresh Status Export With Sold, Premium, Items and Assigned To<span class="tag neutral">Agency</span></div><div class="b">Please send a new export covering every GOAL lead since Sep 21, with Sold, Premium, Items and Assigned To (producer) columns. That brings in the leads since Oct 15 and lets this report show premium, items per sale and results by producer.</div><div class="m"><b>Metric behind it:</b> One file so far, Oct 15 (140 rows, all matched to GOAL leads). 97 leads are not in it, 96 of them from Oct 15 on. It has no Premium, Items or Assigned To column.</div></div></div>
+        <div class="pstep"><div class="num">5</div><div><div class="h">Record Quoted and Sold in GOAL<span class="tag neutral">Agency</span></div><div class="b">Set Quoted and Sold in GOAL on each lead as it happens. It keeps the funnel current between exports.</div><div class="m"><b>Metric behind it:</b> Your file shows 46 quoted and 2 sold; 2 Home leads have a status set in GOAL itself. GOAL's own events show 46 quoted and 2 sold, matching your file.</div></div></div>
+        <div class="pstep"><div class="num">6</div><div><div class="h">Work the Leads Still in a Called Stage<span class="tag neutral">Agency</span></div><div class="b">Make another attempt on each lead still in a Called stage, at a different time of day and by text as well as phone, and update its stage. Leads marked Do Not Call (3) stay off the call list.</div><div class="m"><b>Metric behind it:</b> 91 of the 140 leads in the Oct 15 file (65%) are still in a Called stage: 69 with no contact, 11 with a message left and 11 with a wrong number.</div></div></div>
+        <div class="pstep"><div class="num">7</div><div><div class="h">Follow Up on Open Quotes and Requotes<span class="tag neutral">Agency</span></div><div class="b">Call back each open quote and requote every few days, and set a reminder ahead of each X-date. The Inbound Call Review has a follow-up list for the prospects who called in. Leads marked not interested, already purchased or Do Not Call are left off.</div><div class="m"><b>Metric behind it:</b> Of the 46 leads reached, 2 bought, 25 are open (9 Quoted, 11 Requote, 4 Follow Up and 1 with an X-date set) and 19 are closed (9 not interested, 6 hung up, 2 already purchased, 1 not eligible and 1 who said they never requested a quote).</div></div></div>
+        <div class="pstep"><div class="num">8</div><div><div class="h">Geography: For Discussion<span class="tag amber">For discussion</span></div><div class="b">We can look at where quotes and sales are coming from together and decide whether any area should get more or less focus. No geo-targeting changes have been made.</div><div class="m"><b>Metric behind it:</b> Dallas-Fort Worth counties sent 118 leads with 18 quotes and 1 sale; San Antonio area 34 leads and 6 quotes; Austin area 15 leads, 6 quotes and 1 sale; Houston area 7 leads and 2 quotes. The rest of Texas sent 63 leads with 14 quotes. The Source and ZIP Sales report has every county and ZIP.</div></div></div>
       </div>
     </section>
 
-    <div class="mfoot"><span>All conversion metrics calculated based on Leads, not Clicks.</span><span>GOAL &middot; Since launch, Sep 21 through Oct 19, 2026</span></div>
+    <div class="mfoot"><span>All conversion metrics calculated based on Leads, not Clicks.</span><span>GOAL &middot; Since launch, Sep 21 through Oct 30, 2026</span></div>
 
   </main>
 </div>
